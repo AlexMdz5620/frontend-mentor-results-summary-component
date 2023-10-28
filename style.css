@@ -81,6 +81,9 @@ main{
     margin: 10px;
     border-radius: 7px;
 }
+.balck{
+    color: rgba(0, 0, 0, 0.802);
+}
 /*Especific*/
 .red{
     color: hsl(0, 100%, 67%);
