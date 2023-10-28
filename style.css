@@ -1,0 +1,126 @@
+/* Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+button{
+    width: 220px;
+    height: 40px;
+    border-radius: 2em;
+    color: wheat;
+    background: hsl(241deg 70% 26% / 84%);
+    margin: 15px 0;
+    border: none;
+}
+/*Main*/
+main{
+    height: 95vh;
+    display: grid;
+    place-content: center;
+}
+.divContainer{
+    display: flex;
+    border-radius: 2rem;
+    width: 500px;
+    box-shadow: 10px 15px 20px #80808026;
+}
+.containerResult{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 375px;
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    margin: 10%;
+    width: 125px;
+    height: 125px;
+}
+.result h1{
+    font-size: 3em;
+}
+.result p{
+    font-size: 0.9em;
+    font-weight: 100;
+}
+.scored{
+    text-align: center;
+    width: 100%;
+    font-weight: 200;
+    padding: 10%;
+}
+.containerSummary{
+    text-align: center;
+    width: 50%;
+    border-radius: 0 2rem 2rem 0;
+}
+.containerSummary h3{
+    text-align: left;
+    padding: 5%;
+}
+.laber{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 45px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 7px;
+}
+/*Especific*/
+.red{
+    color: hsl(0, 100%, 67%);
+    background:hsl(0deg 100% 67% / 10%);
+}
+.yellow{
+    color:hsl(39, 100%, 56%);
+    background: hsl(39deg 100% 56% / 10%);
+}
+.green{
+    color: hsl(166, 100%, 37%);
+    background: hsl(166deg 100% 37% / 10%);
+}
+.blue{
+    color: hsl(234, 85%, 45%);
+    background: hsl(234deg 85% 45% / 10%);
+}
+/*Footer*/
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    main{
+        display: inline;
+    }
+    .divContainer{
+        display: inline-block;
+        width: 100%;
+    }
+    .containerResult{
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+    }
+    .containerSummary{
+        width: 100%;
+    }
+
+}
